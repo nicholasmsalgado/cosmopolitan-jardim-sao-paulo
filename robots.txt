@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Motores de Busca e AI Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+Sitemap: https://cosmopolitanjardimsaopaulo.com.br/sitemap.xml

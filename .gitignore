@@ -1,0 +1,17 @@
+# Temp & archives
+*.zip
+*.tar
+*.tar.gz
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Agent and IDE configurations
+.agents/
+.gemini/
+
+# Virtual environments & Python cache
+venv/
+.venv/
+__pycache__/

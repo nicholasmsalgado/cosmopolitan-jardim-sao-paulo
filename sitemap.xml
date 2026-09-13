@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://cosmopolitanjardimsaopaulo.com.br/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://cosmopolitanjardimsaopaulo.com.br/OXE_Jd_Sao_Paulo_Fachada_A4.jpg</image:loc>
+      <image:title>Fachada Cosmopolitan Gaspar Soares Jardim São Paulo</image:title>
+      <image:caption>Fachada arquitetônica contemporânea do Cosmopolitan na Rua Gaspar Soares</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cosmopolitanjardimsaopaulo.com.br/Lazer%20externo/OXE_Jd_Sao_Paulo_Piscina_A4.jpg</image:loc>
+      <image:title>Piscina Panorâmica com Deck Cosmopolitan</image:title>
+      <image:caption>Piscina panorâmica elevada com deck solarium</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cosmopolitanjardimsaopaulo.com.br/Mapa_clean.png</image:loc>
+      <image:title>Mapa de Localização Rua Gaspar Soares Jardim São Paulo</image:title>
+      <image:caption>Localização a 350m do Metrô Jardim São Paulo e proximidade a Santana</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cosmopolitanjardimsaopaulo.com.br/Plantas/clean_studio.png</image:loc>
+      <image:title>Planta Studio Inteligente Cosmopolitan</image:title>
+      <image:caption>Planta humanizada de Studio de 16m² a 22m²</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cosmopolitanjardimsaopaulo.com.br/Plantas/clean_1dorm.png</image:loc>
+      <image:title>Planta 1 Dormitório Cosmopolitan</image:title>
+      <image:caption>Planta humanizada de 1 Dormitório de 24m² a 31m² com varanda e living</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cosmopolitanjardimsaopaulo.com.br/Plantas/clean_2dorms.png</image:loc>
+      <image:title>Planta 2 Dormitórios Cosmopolitan</image:title>
+      <image:caption>Planta humanizada de 2 Dormitórios de 40m² a 77m²</image:caption>
+    </image:image>
+  </url>
+</urlset>
