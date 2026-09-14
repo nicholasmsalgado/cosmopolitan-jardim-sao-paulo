@@ -262,7 +262,18 @@ button, input, select, textarea {
 
   .btn-header {
     padding: 0.45rem clamp(0.7rem, 2.5vw, 1rem);
-    font-size: clamp(0.72rem, 2.3vw, 0.80rem);
+    font-size: clamp(0.74rem, 2.3vw, 0.82rem);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .btn-header .btn-header-full {
+    display: none !important;
+  }
+
+  .btn-header .btn-header-short {
+    display: inline-block !important;
+    white-space: nowrap;
   }
 }
 
@@ -283,14 +294,6 @@ button, input, select, textarea {
     padding: 0.42rem 0.75rem;
     font-size: 0.74rem;
     letter-spacing: -0.01em;
-  }
-
-  .btn-header .btn-header-full {
-    display: none;
-  }
-
-  .btn-header .btn-header-short {
-    display: inline;
   }
 }
 
