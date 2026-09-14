@@ -38,8 +38,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap">
   </noscript>
 
-  <!-- Preload do Recurso Crítico LCP (Fachada Principal) -->
-  <link rel="preload" as="image" href="OXE_Jd_Sao_Paulo_Fachada_A4.webp" type="image/webp" fetchpriority="high">
+  <!-- Preload do Recurso Crítico LCP (Fachada Principal - Responsivo por Dispositivo) -->
+  <link rel="preload" as="image" href="OXE_Jd_Sao_Paulo_Fachada_Mobile.webp" type="image/webp" media="(max-width: 768px)" fetchpriority="high">
+  <link rel="preload" as="image" href="OXE_Jd_Sao_Paulo_Fachada_A4.webp" type="image/webp" media="(min-width: 769px)" fetchpriority="high">
 
   <!-- Indexação e Diretivas de Busca -->
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -245,12 +246,12 @@
       <div class="container hero-container">
         <div class="hero-reference-grid">
           
-          <!-- COLUNA ESQUERDA: Pílula Vertical -->
+          <!-- COLUNA ESQUERDA: Pílula Vertical (Exclusivo Desktop) -->
           <div class="hero-left-block">
             <div class="hero-pill-frame pill-left">
               <picture>
-                <source srcset="Lazer externo/OXE_Jd_Sao_Paulo_Piscina_A4.webp" type="image/webp">
-                <img src="Lazer externo/OXE_Jd_Sao_Paulo_Piscina_A4.jpg" alt="Piscina Panorâmica Cosmopolitan Gaspar Soares" width="400" height="600" fetchpriority="high">
+                <source media="(min-width: 1025px)" srcset="Lazer externo/OXE_Jd_Sao_Paulo_Piscina_A4.webp" type="image/webp">
+                <img src="Lazer externo/OXE_Jd_Sao_Paulo_Piscina_A4.jpg" alt="Piscina Panorâmica Cosmopolitan Gaspar Soares" width="400" height="600" loading="lazy" decoding="async">
               </picture>
             </div>
           </div>
@@ -276,8 +277,9 @@
           <div class="hero-right-block">
             <div class="hero-arch-tall">
               <picture>
-                <source srcset="OXE_Jd_Sao_Paulo_Fachada_A4.webp" type="image/webp">
-                <img src="OXE_Jd_Sao_Paulo_Fachada_A4.jpg" alt="Fachada Principal Cosmopolitan Gaspar Soares" width="600" height="900" fetchpriority="high">
+                <source media="(max-width: 768px)" srcset="OXE_Jd_Sao_Paulo_Fachada_Mobile.webp" type="image/webp">
+                <source media="(min-width: 769px)" srcset="OXE_Jd_Sao_Paulo_Fachada_A4.webp" type="image/webp">
+                <img src="OXE_Jd_Sao_Paulo_Fachada_A4.jpg" alt="Fachada Principal Cosmopolitan Gaspar Soares" width="600" height="900" fetchpriority="high" decoding="async">
               </picture>
             </div>
           </div>
