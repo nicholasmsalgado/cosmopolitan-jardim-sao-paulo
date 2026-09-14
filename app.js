@@ -1,5 +1,5 @@
 /**
- * COSMOPOLITAN GASPAR SOARES - INTERACTIVE ENGINE
+ * COSMOPOLITAN - INTERACTIVE ENGINE
  * Regras anti-slop: animações táteis refinadas, comportamento 100% funcional.
  */
 
@@ -336,7 +336,7 @@ function initLeadForm() {
       telefone: phone,
       email: email,
       mensagem: finalMessage,
-      origem: "Site - Cosmopolitan Gaspar Soares",
+      origem: "Site - Cosmopolitan",
       aba: "Cosmopolitan"
     };
 
@@ -456,7 +456,7 @@ const WHATSAPP_MAIN_NUMBER = "5511987689734";
 const SECTION_SHORT_MESSAGES = {
   hero: "Olá! Vim pelo site do Cosmopolitan e quero saber mais sobre o lançamento.",
   reserva: "Olá! Vim pelo site do Cosmopolitan e quero receber a Tabela Zero.",
-  localizacao: "Olá! Vim pelo site do Cosmopolitan e quero saber mais sobre a localização na Gaspar Soares.",
+  localizacao: "Olá! Vim pelo site do Cosmopolitan e quero saber mais sobre a localização no Jardim São Paulo.",
   lazer: "Olá! Vim pelo site do Cosmopolitan e gostaria de conhecer o lazer resort.",
   plantas: "Olá! Vim pelo site do Cosmopolitan e quero detalhes das plantas.",
   investimento: "Olá! Vim pelo site do Cosmopolitan e quero entender o fluxo para investidor.",

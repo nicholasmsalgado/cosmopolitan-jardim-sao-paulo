@@ -1,4 +1,4 @@
-# Cosmopolitan Gaspar Soares — Landing Page de Alto Padrão
+# Cosmopolitan — Landing Page de Alto Padrão
 
 [![Website](https://img.shields.io/badge/Website-cosmopolitanjardimsaopaulo.com.br-0D9488?style=for-the-badge)](https://cosmopolitanjardimsaopaulo.com.br/)
 [![Performance Desktop](https://img.shields.io/badge/Desktop%20Performance-96-brightgreen?style=for-the-badge)](https://cosmopolitanjardimsaopaulo.com.br/)
@@ -6,13 +6,13 @@
 [![SEO](https://img.shields.io/badge/SEO%20%26%20GEO-100-gold?style=for-the-badge)](https://cosmopolitanjardimsaopaulo.com.br/robots.txt)
 [![Acessibilidade](https://img.shields.io/badge/Acessibilidade-100-blue?style=for-the-badge)](https://cosmopolitanjardimsaopaulo.com.br/)
 
-> Landing Page oficial de alta conversão do empreendimento residencial **Cosmopolitan Gaspar Soares**, localizado na Rua Gaspar Soares, a apenas 350 metros da Estação Metrô Jardim São Paulo (Linha 1-Azul), São Paulo - SP.
+> Landing Page oficial de alta conversão do empreendimento residencial **Cosmopolitan**, localizado no Jardim São Paulo, a apenas 350 metros da Estação Metrô Jardim São Paulo (Linha 1-Azul), São Paulo - SP.
 
 ---
 
 ## 🏛️ Sobre o Empreendimento
 
-* **Endereço Nobre**: Rua Gaspar Soares, Jardim São Paulo, Zona Norte — São Paulo/SP (CEP 02041-020).
+* **Endereço Nobre**: Jardim São Paulo, Zona Norte — São Paulo/SP (CEP 02041-020).
 * **Mobilidade**: A 350 metros (4 minutos a pé) do Metrô Jardim São Paulo.
 * **Tipologias Inteligentes**:
   * **Studios Inteligentes**: 16m² a 22m² privativos (alta demanda para locação e investidores).
