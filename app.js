@@ -101,10 +101,10 @@ const plansData = {
     title: "16m² a 22m² Privativos",
     image: "Plantas/clean_studio.webp",
     features: [
-      "Ambiente integrado com marcenaria sob medida",
-      "Cozinha linear otimizada com bancada de refeições",
-      "Banheiro completo com acabamentos contemporâneos",
-      "Alta liquidez e demanda para locação no Jd. São Paulo"
+      "Ambiente integrado sob medida",
+      "Cozinha linear com bancada",
+      "Banheiro com acabamento nobre",
+      "Alta demanda para locação"
     ],
     startingPrice: "A partir de R$ 247.352"
   },
@@ -113,10 +113,10 @@ const plansData = {
     title: "24m² a 31m² Privativos",
     image: "Plantas/clean_1dorm.webp",
     features: [
-      "Dormitório independente com espaço para armário",
-      "Living integrado com espaço para home office",
-      "Cozinha com área de serviço embutida",
-      "Ideal para moradia individual ou casal"
+      "Dormitório independente com armário",
+      "Living com espaço para home office",
+      "Cozinha com área de serviço",
+      "Ideal para morar ou investir"
     ],
     startingPrice: "A partir de R$ 330.263"
   },
@@ -125,10 +125,10 @@ const plansData = {
     title: "40m² a 77m² Privativos",
     image: "Plantas/clean_2dorms.webp",
     features: [
-      "2 dormitórios com ventilação e luz natural",
-      "Living amplo para 2 ambientes (jantar e TV)",
-      "Cozinha americana com ventilação direta",
-      "Conforto para famílias em localização nobre"
+      "2 dormitórios com luz natural",
+      "Living amplo para 2 ambientes",
+      "Cozinha com ventilação direta",
+      "Conforto para toda a família"
     ],
     startingPrice: "A partir de R$ 498.360"
   }
@@ -344,27 +344,21 @@ function initLeadForm() {
     const originalBtnText = submitBtn ? submitBtn.textContent : '';
     if (submitBtn) {
       submitBtn.disabled = true;
-      submitBtn.textContent = 'Enviando cadastro...';
+      submitBtn.textContent = 'Enviando...';
     }
     if (feedbackBanner) {
       feedbackBanner.style.display = 'none';
     }
 
     try {
-      const response = await fetch(WEBHOOK_URL, {
+      await fetch(WEBHOOK_URL, {
         method: 'POST',
+        mode: 'no-cors',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'text/plain;charset=utf-8'
         },
         body: JSON.stringify(payload)
       });
-
-      let responseData = null;
-      try {
-        responseData = await response.json();
-      } catch (jsonErr) {
-        console.warn('Retorno não-JSON do webhook:', jsonErr);
-      }
 
       // Prepara o link curto do WhatsApp para o modal pós-envio
       const waShortMessage = encodeURIComponent(
@@ -380,7 +374,7 @@ function initLeadForm() {
       if (feedbackBanner) {
         feedbackBanner.className = 'form-feedback-banner success';
         feedbackBanner.style.display = 'block';
-        feedbackBanner.innerHTML = '✓ <strong>Cadastro realizado com sucesso!</strong> Seus dados foram salvos na planilha oficial.';
+        feedbackBanner.innerHTML = '✓ <strong>Cadastro realizado com sucesso!</strong> Seus dados foram salvos.';
       }
 
       if (modal) {
@@ -393,7 +387,7 @@ function initLeadForm() {
       console.error('Erro na requisição ao Webhook:', err);
 
       const waShortMessage = encodeURIComponent(
-        `Olá! Vim pelo site do Cosmopolitan e gostaria de atendimento para a Tabela Zero: ${name}, interesse em ${typology}.`
+        `Olá! Vim pelo site do Cosmopolitan e gostaria de saber sobre a Tabela Zero: ${name}, interesse em ${typology}.`
       );
       const waFallbackUrl = `https://api.whatsapp.com/send?phone=${WHATSAPP_MAIN_NUMBER}&text=${waShortMessage}`;
 
@@ -401,9 +395,9 @@ function initLeadForm() {
         feedbackBanner.className = 'form-feedback-banner error';
         feedbackBanner.style.display = 'block';
         feedbackBanner.innerHTML = `
-          Ocorreu uma instabilidade na conexão ao salvar seus dados.<br>
-          <strong>Não se preocupe:</strong> você pode falar direto com nosso atendimento pelo WhatsApp agora: 
-          <a href="${waFallbackUrl}" target="_blank" rel="noopener" style="text-decoration: underline; font-weight: 700; color: inherit;">Clique aqui para abrir no WhatsApp</a>.
+          Instabilidade na conexão ao salvar seus dados.<br>
+          <strong>Fale direto pelo WhatsApp:</strong> 
+          <a href="${waFallbackUrl}" target="_blank" rel="noopener" style="text-decoration: underline; font-weight: 700; color: inherit;">Clique aqui para abrir</a>.
         `;
       } else {
         alert('Houve uma instabilidade na rede. Se preferir, fale conosco pelo WhatsApp.');
@@ -459,8 +453,7 @@ const SECTION_SHORT_MESSAGES = {
   localizacao: "Olá! Vim pelo site do Cosmopolitan e quero saber mais sobre a localização no Jardim São Paulo.",
   lazer: "Olá! Vim pelo site do Cosmopolitan e gostaria de conhecer o lazer resort.",
   plantas: "Olá! Vim pelo site do Cosmopolitan e quero detalhes das plantas.",
-  investimento: "Olá! Vim pelo site do Cosmopolitan e quero entender o fluxo para investidor.",
-  atendimento: "Olá! Vim pelo site do Cosmopolitan e quero tirar dúvidas sobre o pré-lançamento."
+  investimento: "Olá! Vim pelo site do Cosmopolitan e quero entender o fluxo para investidor."
 };
 
 let currentVisibleSectionId = 'hero';
@@ -493,8 +486,7 @@ function initDynamicWhatsApp() {
     { id: 'localizacao', el: document.getElementById('localizacao') },
     { id: 'lazer', el: document.getElementById('lazer') },
     { id: 'plantas', el: document.getElementById('plantas') },
-    { id: 'investimento', el: document.getElementById('investimento') },
-    { id: 'atendimento', el: document.querySelector('.footer-cta-section') }
+    { id: 'investimento', el: document.getElementById('investimento') }
   ];
 
   if ('IntersectionObserver' in window) {
